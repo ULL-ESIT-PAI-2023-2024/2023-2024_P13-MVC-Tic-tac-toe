@@ -87,16 +87,15 @@ es un simple y conocido juego de lápiz y papel entre dos jugadores: O y X, que 
 La aplicación que se propone crear es una versión para que un usuario juegue contra el ordenador.
 En 
 [esta página](https://playtictactoe.org/)
-que se utilizará como referencia, puede ud. jugar interactivamente.
-Consiga que la aplicación que Ud. desarrolle sea todo lo similar posible a la de referencia salvo por los
-banner de publicidad de esa página.
+que se utilizará como referencia, puede Ud. jugar interactivamente.
+Consiga que su aplicación sea todo lo similar posible a la de referencia salvo por los banner de publicidad de esa página.
 
 Antes de proceder al desarrollo, tómese el tiempo necesario para identificar objetos, clases, métodos y
 relaciones entre estas entidades.
 
 Diseñe su aplicación web como una SPA
 ([Single-page application](https://en.wikipedia.org/wiki/Single-page_application))
-de modo que toda la simulación se muestre en el viewport del navegador sin necesidad de usar las barras de scroll.
+de modo que el juego se muestre en el viewport del navegador sin necesidad de usar las barras de scroll.
 
 El código disponible en el 
 [repositorio de códigos de ejemplo]()
