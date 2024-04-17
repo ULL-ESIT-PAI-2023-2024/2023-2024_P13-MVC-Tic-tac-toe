@@ -97,9 +97,9 @@ Diseñe su aplicación web como una SPA
 ([Single-page application](https://en.wikipedia.org/wiki/Single-page_application))
 de modo que el juego se muestre en el viewport del navegador sin necesidad de usar las barras de scroll.
 
-El código disponible en el 
-[repositorio de códigos de ejemplo]()
-de la asignatura puede serle útil como punto de partida, aunque la aplicación que se propone desarrollar ha de
+Las diferentes versiones del código disponible en el 
+[repositorio de códigos de ejemplo](https://github.com/ULL-ESIT-PAI-2023-2024/PAI-class-code-examples/tree/master/src/T4-Events-TS/tic-tac-toe)
+de la asignatura pueden serle útil como punto de partida, aunque la aplicación que se propone desarrollar ha de
 ser orientada a objetos y conforme al patrón MVC, requisitos que no cumple el código anterior.
 
 Aproveche el desarrollo que se propone para practicar el patrón MVC así como los mecanismos de comunicación
