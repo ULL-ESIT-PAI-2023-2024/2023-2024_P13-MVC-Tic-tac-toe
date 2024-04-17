@@ -78,11 +78,13 @@ ejecutarse su aplicación, mientras que en el segundo ha de incluir un enlace (v
 de resultados* de este documento) a la URL pública donde encontrar su aplicación.
 
 ### El juego del tres en raya
-Halma es un antiguo juego de mesa del cual existen muchas variantes.
-La aplicación que se propone crear es una versión para jugar en solitario con 9 piezas en un tablero de 9x9. 
-Al comienzo del juego, las piezas se sitúan formando un cuadrado de 3x3 en la esquina inferior izquierda del tablero. 
-El objetivo del juego es mover todas las piezas para que formen un cuadrado de 3x3 en la esquina superior derecha 
-del tablero, en el menor número de movimientos.
+Esta es la última práctica de la asignatura en el este curso.
+
+El
+[Tres en raya]()https://en.wikipedia.org/wiki/Tic-tac-toe
+es un simple y conocido juego de lápiz y papel entre dos jugadores: O y X, que marcan alternativamente los espacios vacíos de un tablero de 3x3 casillas.
+La aplicación que se propone crear es una versión para que un usuario juegue contra el ordenador.
+
 
 En 
 [esta página](https://diveinto.html5doctor.com/canvas.html#halma)
@@ -158,7 +160,6 @@ que Ud. haya cerrado la sesión linux en la máquina IaaS.
 
 
 ### Presentación de resultados de todas sus prácticas
-Esta es la última práctica de la asignatura en el este curso.
 Al efecto de tener todas sus prácticas centralizadas en un único repositorio, organice todas las prácticas que
 ha realizado en la asignatura (las haya evaluado o no) en un único proyecto que las incluya todas.
 Organice convenientemente el código y recursos de cada práctica en directorios diferenciados dentro del
