@@ -78,45 +78,33 @@ ejecutarse su aplicación, mientras que en el segundo ha de incluir un enlace (v
 de resultados* de este documento) a la URL pública donde encontrar su aplicación.
 
 ### El juego del tres en raya
-Esta es la última práctica de la asignatura en el este curso.
+Esta es la última práctica de la asignatura en el este curso, y en ella 
+se propone desarrollar en TS una aplicación web `tic-tac-toe.ts` conforme al patrón MVC.
 
 El
-[Tres en raya]()https://en.wikipedia.org/wiki/Tic-tac-toe
+[Tres en raya](https://en.wikipedia.org/wiki/Tic-tac-toe)
 es un simple y conocido juego de lápiz y papel entre dos jugadores: O y X, que marcan alternativamente los espacios vacíos de un tablero de 3x3 casillas.
 La aplicación que se propone crear es una versión para que un usuario juegue contra el ordenador.
-
-
 En 
-[esta página](https://diveinto.html5doctor.com/canvas.html#halma)
-puede consultar las reglas del juego y dispone asimismo de 
-[otra página](https://diveinto.html5doctor.com/examples/canvas-halma.html)
-en la que puede jugar interactivamente.
-El código fuente de la aplicación está
-[también disponible](https://diveinto.html5doctor.com/examples/halma.js).
+[esta página](https://playtictactoe.org/)
+que se utilizará como referencia, puede ud. jugar interactivamente.
+Consiga que la aplicación que Ud. desarrolle sea todo lo similar posible a la de referencia salvo por los
+banner de publicidad de esa página.
 
-
-
-
-
-
-
-
-
-
-
-En esta práctica se propone desarrollar en TS una aplicación web `tic-tac-toe.ts` conforme al patrón MVC.
 Antes de proceder al desarrollo, tómese el tiempo necesario para identificar objetos, clases, métodos y
 relaciones entre estas entidades.
-
-
-[Esta aplicación](https://academo.org/demos/trapezoidal-rule-calculator/)
-se tomará como referencia para la que se propone desarrollar y en ella dispone de una explicación más
-detallada de la regla del trapecio.
 
 Diseñe su aplicación web como una SPA
 ([Single-page application](https://en.wikipedia.org/wiki/Single-page_application))
 de modo que toda la simulación se muestre en el viewport del navegador sin necesidad de usar las barras de scroll.
 
+El código disponible en el 
+[repositorio de códigos de ejemplo]()
+de la asignatura puede serle útil como punto de partida, aunque la aplicación que se propone desarrollar ha de
+ser orientada a objetos y conforme al patrón MVC, requisitos que no cumple el código anterior.
+
+Aproveche el desarrollo que se propone para practicar el patrón MVC así como los mecanismos de comunicación
+entre clases que se han estudiado en las sesiones de teoría de la asignatura.
 
 ### Presentación de resultados
 La visualización de la ejecución del programa se realizará a través de una página web alojada
