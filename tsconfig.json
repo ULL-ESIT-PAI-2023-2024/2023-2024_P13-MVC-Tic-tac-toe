@@ -1,5 +1,5 @@
 {
-  "display": "Configuration for Trapezoidal Rule Calculator",
+  "display": "Configuration for Tic Tac Toe game",
   "compilerOptions": {
     "target": "es2022",
     "module": "commonjs",

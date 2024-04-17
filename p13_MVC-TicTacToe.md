@@ -1,8 +1,10 @@
-# Práctica 12. Modelo Vista Controlador. Programación gráfica, orientada a objetos y dirigida por eventos en TypeScript. Calculadora de áreas usando la regla del trapecio.
-### Esta práctica junto con la siguiente constituyen el examen final de la asignatura
+# Práctica 13. Modelo Vista Controlador. Programación gráfica, orientada a objetos y dirigida por eventos en TypeScript. Tres en Raya
+### Esta práctica junto con la anterior constituyen el examen final de la asignatura
 
 ### Objetivos
 Los objetivos de esta tarea son poner en práctica:
+* El diseño de una aplicación conforme al patrón MVC.
+
 * La arquitectura Modelo Vista Controlador
 * Conceptos de Programación orientada a eventos en TypeScript.
 * Conceptos de Programación Gráfica en TypeScript usando la API Canvas.
@@ -17,23 +19,18 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará la realización de las diferentes tareas que se proponen
 * El comportamiento del programa debe ajustarse a lo descrito en este documento
 * Capacidad de la programadora de introducir cambios en el programa desarrollado
+* Se valorará una correcta implementación del patrón MVC y la conformidad a los principios de la OOP.
 * Se acredita conocimiento y puesta en práctica de principios y buenas prácticas de programación orientada a objetos
 * Saber corregir bugs en sus programas utilizando el depurador de Visual Studio Code
 * Deben usarse estructuras de datos adecuadas para representar los diferentes elementos que intervienen en el problema
-* Ser capaz de desarrollar programas simples en TypeScript en el entorno Linux de la VM de la asignatura usando
-  `ts-node`
 * Ser capaz de generar documentación para sus programas TS utilizando
   [TypeDoc](https://typedoc.org/)
   y de visualizar dicha documentación en un servidor web
 * Acreditar que conoce las etiquetas de 
   [JSDoc](https://jsdoc.app/)
-* El alumnado debe ser capaz de resolver problemas tanto en JS como en TS en la plataforma Exercism subiendo sus soluciones a la misma
-* Ser capaz de desarrollar tests unitarios para sus programas utilizando
-  [Jest](https://jestjs.io/)
 * Acreditar su capacidad para configurar y utilizar 
   [ESLint](https://eslint.org/)
 y que es capaz de trabajar con la misma en Visual Studio Code
-* El alumnado ha de acreditar que es capaz de desarrollar programas de la plataforma Jutge
 * Se comprobará que el código que el alumnado escribe se adhiere a las reglas de las Guías de Estilo de Google para 
 [TypeScript](https://google.github.io/styleguide/tsguide.html)
 y/o
@@ -80,45 +77,35 @@ En el primero de ellos ha de explicar en detalle cómo a partir de clonar su rep
 ejecutarse su aplicación, mientras que en el segundo ha de incluir un enlace (véase el apartado *Presentación
 de resultados* de este documento) a la URL pública donde encontrar su aplicación.
 
-### El patrón Modelo Vista Controlador
-El 
-[modelo-vista-controlador](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-(MVC) es un patrón de diseño arquitectónico habitualmente utilizado para el desarrollo de interfaces de usuario 
-que divide la lógica de la aplicación en tres elementos relacionados. 
-Esta división se realiza para separar la representación interna de la información (modelo) 
-de las formas en que se presenta (vista) y se acepta la información del usuario (contolador).
-Este patrón se ha utilizado tradicionalmente para interfaces gráficas de usuario (GUIs) de escritorio, 
-y se ha popularizado asimismo para el diseño de aplicaciones web.
+### El juego del tres en raya
+Halma es un antiguo juego de mesa del cual existen muchas variantes.
+La aplicación que se propone crear es una versión para jugar en solitario con 9 piezas en un tablero de 9x9. 
+Al comienzo del juego, las piezas se sitúan formando un cuadrado de 3x3 en la esquina inferior izquierda del tablero. 
+El objetivo del juego es mover todas las piezas para que formen un cuadrado de 3x3 en la esquina superior derecha 
+del tablero, en el menor número de movimientos.
 
-Es fácil encontrar en la web información sobre el patrón MVC, así como ejemplos de implementación del
-mismo en diferentes lenguajes.
-Los siguientes son elementos que puede utilizar para iniciarse en el estudio del patrón MVC:
-* [Estas transparencias](https://campusingenieriaytecnologia2324.ull.es/pluginfile.php/7746/mod_resource/content/2/FAlmeida-Transparencias-MVC2020.pdf)
-del profesor F. Almeida pueden ser un buen punto de toma de contacto con MVC.
-* En [esta otra página](https://www.roseindia.net/tutorial/java/jdbc/javamvcdesignpattern.html)
-puede hallar otra explicación detallada del modelo con una imagen que muestra el papel y las relaciones entre
-los componentes del mismo.
-* El directorio `MVC-ejemplo-java` de este proyecto contiene una aplicación java para un conversor de monedas
-que sigue el patrón MVC.
-* Por último, en el artículo
-[Build a Simple MVC App From Scratch in JavaScript](https://www.taniarascia.com/javascript-mvc-todo-app/)
-se explica con detalle la implementación de una aplicación (lista de tareas) siguiendo el patrón MVC.
-En el repositorio del trabajo expuesto en clase sobre MVC
-[Trabajo MVC](https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-mvc-pablo-medina-moreno/tree/master/src/todo)
-puede encontrar el código adaptado a TypeScript de la aplicación.
+En 
+[esta página](https://diveinto.html5doctor.com/canvas.html#halma)
+puede consultar las reglas del juego y dispone asimismo de 
+[otra página](https://diveinto.html5doctor.com/examples/canvas-halma.html)
+en la que puede jugar interactivamente.
+El código fuente de la aplicación está
+[también disponible](https://diveinto.html5doctor.com/examples/halma.js).
 
-### Cálculo de áreas usando la regla del trapecio 
-En esta práctica se propone desarrollar una aplicación TypeScript basada en el patrón MVC.
-La aplicación permitirá el cálculo aproximado del área bajo una curva utilizando la regla del trapecio y
-dispondrá de una interfaz gráfica que permitirá visualizar la aplicación de la regla así como modificar
-algunos parámetros del cálculo.
 
-La 
-[regla del trapecio](https://en.wikipedia.org/wiki/Trapezoidal_rule)
-es un método de integración numérica, es decir, un método para calcular aproximadamente el valor de una integral definida. 
-La regla se basa en aproximar el valor de la integral por la suma de las áreas de una serie de trapecios,
-siendo muy fácil calcular el área de un trapecio.
-Cuanto mayor es el número de trapecios, mejor será la aproximación que se consiga para el área.
+
+
+
+
+
+
+
+
+
+En esta práctica se propone desarrollar en TS una aplicación web `tic-tac-toe.ts` conforme al patrón MVC.
+Antes de proceder al desarrollo, tómese el tiempo necesario para identificar objetos, clases, métodos y
+relaciones entre estas entidades.
+
 
 [Esta aplicación](https://academo.org/demos/trapezoidal-rule-calculator/)
 se tomará como referencia para la que se propone desarrollar y en ella dispone de una explicación más
@@ -128,22 +115,12 @@ Diseñe su aplicación web como una SPA
 ([Single-page application](https://en.wikipedia.org/wiki/Single-page_application))
 de modo que toda la simulación se muestre en el viewport del navegador sin necesidad de usar las barras de scroll.
 
-En su aplicación (y a diferencia de la de referencia), al pulsar el botón 'Update' el valor aproximado del área de la
-curva se imprimirá (*Sum of all Trapezium areas:*) dentro del canvas en el que se visualiza la curva.
-
-En su aplicación necesitará evaluar una función que es introducida como texto por el usuario (Campo *Expression*).
-Para ello puede resultarle útil usar una librería como 
-[mathjs](https://mathjs.org/)
-que entre otras funcionalidades incluye un analizador sintáctico de expresiones.
-
-Alternativamente puede también limitar las funciones que se permiten a algunas que el usuario seleccione en la
-interfaz gráfica.
 
 ### Presentación de resultados
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
-[1] `http://10.6.129.123:8080/einstein-albert-trapezoidal-rule.html`
+[1] `http://10.6.129.123:8080/einstein-albert-tic-tac-toe.html`
 
 en la que se incustará un lienzo (canvas) para dibujar las manos de la partida de poker.
 Sustituya *Albert Einstein* por su nombre y apellido en la URL de su página
@@ -178,11 +155,26 @@ Esta referencia
 puede serle útil para hacer que su servidor se ejecute en background y la página esté disponible después de
 que Ud. haya cerrado la sesión linux en la máquina IaaS.
 
+
+
+### Presentación de resultados de todas sus prácticas
+Esta es la última práctica de la asignatura en el este curso.
+Al efecto de tener todas sus prácticas centralizadas en un único repositorio, organice todas las prácticas que
+ha realizado en la asignatura (las haya evaluado o no) en un único proyecto que las incluya todas.
+Organice convenientemente el código y recursos de cada práctica en directorios diferenciados dentro del
+proyecto.
+Consiga que todas aquellas prácticas que hayan consistido en el desarrollo de una aplicación web sean
+accesibles a través de una web `prácticas-PAI-2023-2024.html` accesible desde una URL pública en su máquina IaaS de la
+asignatura.
+
+El servidor web que aloja estas páginas ha de seguir funcionando después de cerrar la sesión en la máquina
+IaaS-ULL que aloja el servidor para posibilitar la evaluación del trabajo realizado.
+
+
+
 ## Referencias
 * [Modelo-vista-controlador](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-* [Build a Simple MVC App From Scratch in JavaScript](https://www.taniarascia.com/javascript-mvc-todo-app/)
 * [Trabajo MVC](https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-mvc-pablo-medina-moreno/tree/master/src/todo-example)
-* [mathjs](https://mathjs.org/)
 * [Runing Node JS Server In Background](https://iulianpopa.ro/nodejs/2021/06/04/running-node-js-server-in-background/)
 * [PAI Code Examples](https://github.com/ULL-ESIT-PAI-2023-2024/PAI-class-code-examples)
 * [The Modern Javascript Tutorial](https://javascript.info)
