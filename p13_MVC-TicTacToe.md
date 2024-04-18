@@ -1,4 +1,4 @@
-# Práctica 13. Modelo Vista Controlador. Programación gráfica, orientada a objetos y dirigida por eventos en TypeScript. Tres en Raya
+# Práctica 13. Modelo Vista Controlador. Tres en Raya
 ### Esta práctica junto con la anterior constituyen el examen final de la asignatura
 
 ### Objetivos
@@ -11,7 +11,7 @@ Los objetivos de esta tarea son poner en práctica:
 * Metodologías y conceptos de Programación Orientada a Objetos en TypeScript.
 * Principios y Buenas prácticas de programación Orientada a Objetos.
 * El uso de elementos HTML básicos.
-* El uso de algunas propiedades básicas de CSS para dotar de estilo a una página web simple.
+* El uso de propiedades de CSS para dotar de estilo a una página web simple.
 
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
@@ -42,6 +42,7 @@ y/o
 * La aplicación que desarrolle ha de ser orientada a objetos.
 Ponga en práctica en su desarrollo los fundamentos, principios y buenas prácticas de la OOP así como los
 conocimientos que haya adquirido en el uso de patrones de diseño.
+Antes de proceder al desarrollo, tómese el tiempo necesario para identificar objetos, clases, métodos y relaciones entre estas entidades.
 
 * Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su proyecto que
 permitan gestionar las dependencias del mismo.
@@ -90,8 +91,6 @@ En
 que se utilizará como referencia, puede Ud. jugar interactivamente.
 Consiga que su aplicación sea todo lo similar posible a la de referencia salvo por los banner de publicidad de esa página.
 
-Antes de proceder al desarrollo, tómese el tiempo necesario para identificar objetos, clases, métodos y
-relaciones entre estas entidades.
 
 Diseñe su aplicación web como una SPA
 ([Single-page application](https://en.wikipedia.org/wiki/Single-page_application))
