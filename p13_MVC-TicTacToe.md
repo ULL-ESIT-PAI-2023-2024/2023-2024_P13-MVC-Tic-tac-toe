@@ -98,6 +98,7 @@ Las diferentes versiones del código disponible en el
 [repositorio de códigos de ejemplo](https://github.com/ULL-ESIT-PAI-2023-2024/PAI-class-code-examples/tree/master/src/T4-Events-TS/tic-tac-toe)
 de la asignatura y que se explican en las
 [transparencias de las sesiones de teoría](https://docs.google.com/presentation/d/1y8vpt6xbO4julrB6Tn3GeMQT_JoxBpVX24I8XH8qsEc/edit?usp=sharing)
+(Case Study: Tic-tac-toe)
 pueden serle útil como punto de partida, aunque la aplicación que se propone desarrollar ha de
 ser orientada a objetos y conforme al patrón MVC, requisitos que no cumple el código anterior.
 
